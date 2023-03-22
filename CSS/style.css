@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@200;300;400&family=Roboto:wght@300;400;500&family=Staatliches&display=swap');
 
 /* ESTILOS GERAIS  */
 body {
-  font-family: 'Inter', sans-serif;
+font-family: 'Inter', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Staatliches', cursive;
 }
 
 p{
- /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Poppins', sans-serif;
  font-size: 14px;
  line-height: 20px;
 }
@@ -89,15 +90,18 @@ margin-top: 20px;
 
 .header_menu ul li a {
 color: black;
-font-weight: bold;
 text-transform: uppercase;
-letter-spacing: .1em;
-font-size: 14px;
+letter-spacing: .2em;
+font-size: 17px;
 padding: 10px 0;
 }
 
 .header_menu ul li a:hover {
 color: #fff;
+}
+
+.header_menu ul li a.menu-ativo {
+  color: white;
 }
 
 /* HERO */
@@ -111,8 +115,8 @@ color: #fff;
   text-align: center;
   padding-top: 57px;
   -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .introducao h1 {
@@ -150,6 +154,9 @@ font-weight: bold;
 font-size: 16px;
 letter-spacing: .1em;
 }
+
+
+
 
 /* PRODUTOS */
 
@@ -287,6 +294,50 @@ letter-spacing: .1em;
     opacity: 1;
   }
 }
+
+.scale-in-hor-center {
+	-webkit-animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-hor-center {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+}
+
+.js-scroll.ativo{
+  animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+
 
 /* END ANIMATIONS */
 
@@ -457,7 +508,7 @@ letter-spacing: .1em;
 .footer-contato ul li{
 font-size: 15px;
 line-height: 20px;
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 
 .footer-redes ul li {
@@ -480,6 +531,8 @@ font-family: Arial, Helvetica, sans-serif;
   background: #fec63e;
   padding: 20px 0;
 }
+  
+/* SCROLLBAR */
 
 /* width */
 ::-webkit-scrollbar {
@@ -501,6 +554,92 @@ font-family: Arial, Helvetica, sans-serif;
   background: #fec63e;
 }
 
+/* PÁGINA SOBRE */
+
+.introducao-interna {
+  background:url(../img/bg-sobre.jpg) no-repeat center;
+  background-size: cover;
+  width: 100%;
+  margin-top: 92px;
+  height: 200px;
+  text-align: center;
+  color: white;
+  padding-top: 30px;
+  -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.introducao-interna h1{
+  font-size: 58px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+.introducao-interna h1::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 14px auto 12px auto;
+}
+
+.introducao-interna p {
+  font-size: 20px;
+}
+
+.missao-sobre {
+  padding-top: 60px;
+}
+
+.missao-sobre p{
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 30px;
+  margin-bottom: 1em;
+  padding-right: 40px;
+}
+
+.missao-sobre ul li {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 20px;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+.foto-equipe {
+  padding-top: 40px;
+}
+
+.subtitulo-interno {
+  font-size: 30px;
+ line-height: 30px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.subtitulo-interno::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: black;
+  margin: 8px;
+}
+
+
+/* PRODUTOS */
+
+.interna-produtos {
+  background: url(/img/bg-produtos.jpg) no-repeat center;
+  background-size: cover;
+}
 
 
 
