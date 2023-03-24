@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/CSS/grid.css" />
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/CSS/sobre.css" />
+    <link rel="stylesheet" href="CSS/media-querie.css" />
 
     <script defer src="main.js"></script>
   </head>
@@ -42,20 +43,129 @@
     </section>
 
     <!-- PRODUTOS -->
-    <section class="container">
-      <div>
+    <section class="container produtos-item js-scroll">
+      <div class="grid-11">
+        <img src="img/produtos/bikcraft-passeio-1.jpg" alt="Bikcraft Passeio" />
+        <h2>Passeio</h2>
+      </div>
+      <div class="grid-5 produto-icone">
+        <img src="img/produtos/passeio.svg" alt="" />
+      </div>
+      <div class="grid-8">
         <img
-          class="grid-11"
-          src="img/produtos/bikcraft-passeio-1.jpg"
-          alt="Bikcraft Passeio"
+          src="img/produtos/bikcraft-passeio-2.jpg"
+          alt="Bikecraft Passeio"
         />
       </div>
-
-      <div class="grid-5"><img src="img/produtos/passeio.svg" alt="" /></div>
-
-      <div class="grid-8">
-        <img src="img/produtos/bikcraft-passeio-2.jpg" alt="" />
+      <div class="grid-8 produto-info">
+        <p>
+          No mundo atual, a contínua expansão de nossa atividade cumpre um papel
+          essencial na formula da gestão inovadora da qual fazemos parte
+        </p>
+        <ul>
+          <li>Conforto</li>
+          <li>Velocidade</li>
+          <li>Design</li>
+          <li>Versatilidade</li>
+        </ul>
       </div>
+    </section>
+
+    <section class="container produtos-item">
+      <div class="grid-11">
+        <img src="img/produtos/bikcraft-esporte-1.jpg" alt="Bikcraft Esporte" />
+        <h2>ESPORTE</h2>
+      </div>
+      <div class="grid-5 produto-icone">
+        <img src="img/produtos/esporte.svg" alt="" />
+      </div>
+      <div class="grid-8 produto-info">
+        <p>
+          No mundo atual, a contínua expansão de nossa atividade cumpre um papel
+          essencial na formula da gestão inovadora da qual fazemos parte
+        </p>
+        <ul>
+          <li>Conforto</li>
+          <li>Velocidade</li>
+          <li>Design</li>
+          <li>Versatilidade</li>
+        </ul>
+      </div>
+      <div class="grid-8">
+        <img
+          src="img/produtos/bikcraft-esporte-2.jpg"
+          alt="Bikecraft Passeio"
+        />
+      </div>
+    </section>
+
+    <section class="container produtos-item">
+      <div class="grid-11">
+        <img src="img/produtos/bikcraft-retro-1.jpg" alt="Bikcraft Retro" />
+        <h2>RETRO</h2>
+      </div>
+      <div class="grid-5 produto-icone">
+        <img src="img/produtos/retro.svg" alt="" />
+      </div>
+      <div class="grid-8">
+        <img src="img/produtos/bikcraft-retro-2.jpg" alt="Bikecraft Passeio" />
+      </div>
+      <div class="grid-8 produto-info">
+        <p>
+          No mundo atual, a contínua expansão de nossa atividade cumpre um papel
+          essencial na formula da gestão inovadora da qual fazemos parte
+        </p>
+        <ul>
+          <li>Conforto</li>
+          <li>Velocidade</li>
+          <li>Design</li>
+          <li>Versatilidade</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ORÇAMENTO FORM-->
+
+    <section class="orcamento">
+      <div class="container">
+        <h2 class="subtitulo">ORÇAMENTO</h2>
+        <form id="orcamento-form" class="form grid-8">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Nome" />
+          <label for="email">E-mail</label>
+          <input type="text" id="email" placeholder="E-mail" />
+          <label for="Telefone">Telefone</label>
+          <input type="numer" id="telefone" placeholder="telefone" />
+          <label for="mensagem">Especificações</label>
+          <textarea id="espec" placeholder="Faça aqui seu orçamento"></textarea>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+        <div class="orcamento-dados grid-8">
+          <h3>Dados</h3>
+          <span>+55 21 93223 3232</span>
+          <span class="dados-email">orcamento@bikcraft.com</span>
+          <h3>MONTE SUA BIKCRAFT</h3>
+          <p>Escolha as especificações</p>
+          <ul>
+            <li>- Cores</li>
+            <li>- Estilos</li>
+            <li>- Medidas</li>
+            <li>- Acessórios</li>
+            <li>- Outros</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUEBRA -->
+    <section class="quebra js-scroll">
+      <blockquote class="quote-externo container">
+        <p>
+          "o verdadeiro segredo da felicidade está em ter um genuíno interesse
+          por todos os detalhes da vida cotidiana."
+        </p>
+        <cite>WILLIAM MORRIS</cite>
+      </blockquote>
     </section>
 
     <!-- FOOTER -->

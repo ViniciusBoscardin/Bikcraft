@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="/CSS/grid.css" />
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/CSS/sobre.css" />
-    <link rel="stylesheet" href="CSS/media-querie.css" />
+    <link rel="stylesheet" href="CSS/media-querie.css">
+
 
     <script defer src="main.js"></script>
   </head>
@@ -25,90 +26,81 @@
         </a>
         <nav class="grid-12 header_menu">
           <ul>
-            <li><a href="sobre.html" class="menu-ativo">Sobre</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
             <li><a href="produtos.html">Produtos</a></li>
             <li><a href="portfolio.html">Portfólio</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a href="contato.html" class="menu-ativo">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <!-- HERO -->
-    <section class="introducao-interna interna-sobre">
+    <section class="introducao-interna interna-contato">
       <div class="container">
-        <h1 class="tracking-in-expand">Sobre</h1>
-        <p>Conheça mais sobre a Bikcraft</p>
+        <h1 class="tracking-in-expand">CONTATO</h1>
+        <p>Fale conosco</p>
       </div>
     </section>
 
-    <!-- MISSÃO -->
-    <section class="missao-sobre container">
-      <div class="grid-10">
-        <h2 class="subtitulo-interno">HISTÓRIA, MISSÃO E VISÃO</h2>
-        <p>
-          No mundo atual, a continua expansão de nossa atividade cumpre um papel
-          essencial na formulação da gestão inovadora da qual fazemos parte.
-        </p>
-        <p>
-          No mundo atual, a continua expansão de nossa atividade cumpre um papel
-          essencial na formulação da gestão inovadora da qual fazemos parte.
-        </p>
-      </div>
-      <div class="grid-6">
-        <h2 class="subtitulo-interno">VALORES</h2>
-        <ul>
-          <li>-Qualidade no processo</li>
-          <li>-Foco no cliente</li>
-          <li>-Diversão, preservando a natureza</li>
-          <li>-Sustentabilidade</li>
-        </ul>
-      </div>
-      <div class="grid-16 foto-equipe">
-        <img
-          class="scale-in-hor-center"
-          src="img/equipe-bikcraft.jpg"
-          alt="Equipe Bikcraft"
-        />
-      </div>
-    </section>
+    <!-- ORÇAMENTO FORM-->
 
-    <!-- QUALIDADE -->
-    <section class="qualidade container js-scroll">
-      <h2 class="subtitulo">QUALIDADE</h2>
-      <img
-        src="img/bikcraft-qualidade.svg"
-        alt="Bikcraft"
-        style="display: block"
-      />
-      <ul class="qualidade_lista">
-        <li class="grid-1-3">
-          <h3>Durabilidade</h3>
-          <p>
-            Ainda assim, existem dúvidas a respeito de como a necessidade de
-            renovação.
-          </p>
-        </li>
-        <li class="grid-1-3">
-          <h3>Design</h3>
-          <p>
-            Ainda assim, existem dúvidas a respeito de como a necessidade de
-            renovação.
-          </p>
-        </li>
-        <li class="grid-1-3">
-          <h3>Sustentabilidade</h3>
-          <p>
-            Ainda assim, existem dúvidas a respeito de como a necessidade de
-            renovação.
-          </p>
-        </li>
-      </ul>
-      <div class="call">
-        <p>Conheça mais a nossa história</p>
-        <a href="sobre.html" class="btn btn-black">SOBRE</a>
+    <section class="contact">
+      <div class="container">
+        <form class="form-contato grid-8">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" placeholder="Nome" />
+          <label for="email">E-mail</label>
+          <input type="text" id="email" placeholder="E-mail" />
+          <label for="Telefone">Telefone</label>
+          <input type="numer" id="telefone" placeholder="telefone" />
+          <label for="mensagem">Especificações</label>
+          <textarea id="espec" placeholder="Faça aqui seu orçamento"></textarea>
+          <button type="submit" class="btn btn-black">Enviar</button>
+        </form>
+        <div class="contato-dados grid-8">
+          <h3>Dados</h3>
+          <span>+55 21 93223 3232</span>
+          <span class="dados-email">orcamento@bikcraft.com</span>
+          <span>Rua Ali Perto - Botafogo <br> Rio de Janeiro-RJ-Brasil </span>
+          <br>
+          <div class="contato-icon-redes">
+          <h3>Redes Sociais</h3>
+            <ul class="contato-redes-sociais">
+              <li>
+                <a href="http://facebook.com" target="_blank"
+                  ><img
+                    src="img/redes-sociais/facebook.svg"
+                    class="scale-in-hor-center"
+                    alt="Facebook Bikecraft"
+                /></a>
+              </li>
+
+              <li>
+                <a href="http://instagram.com" target="_blank"
+                  ><img
+                    src="img/redes-sociais/instagram.svg"
+                    alt="Instagram Bikecraft"
+                /></a>
+              </li>
+
+              <li>
+                <a href="http://twitter.com" target="_blank"
+                  ><img
+                    src="img/redes-sociais/twitter.svg"
+                    alt="Twitter Bikecraft"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        </div>
       </div>
-    </section>
+
+      <section class="container" style="margin-top: 40px;">
+        <a href=""><img src="img/endereco-bikcraft.jpg" alt=""></a>
+      </section>
+</section>
 
     <!-- FOOTER -->
     <footer>
