@@ -1,3 +1,4 @@
+// ANIMA SCROLL
 const sections = document.querySelectorAll('.js-scroll');
 const windowMetade = window.innerHeight * 0.9;
 
