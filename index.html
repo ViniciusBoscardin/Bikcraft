@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bikcraft</title>
 
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/ico" />
+
     <link rel="stylesheet" href="/CSS/normalize.css" />
     <link rel="stylesheet" href="/CSS/reset.css" />
     <link rel="stylesheet" href="/CSS/grid.css" />
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/media-querie.css" />
-
-    <script defer src="main.js"></script>
   </head>
 
   <body>
@@ -37,7 +37,7 @@
     <section class="introducao">
       <div class="container">
         <h1 class="tracking-in-expand">Bicicletas Feitas a Mão</h1>
-        <blockquote class="quote-externo">
+        <blockquote class="quote-externo fade-in-top">
           <p>
             "não tenha nada em sua casa que você não considere ou acredita ser
             bonito"
@@ -48,7 +48,7 @@
       </div>
     </section>
 
-    <section class="container" data-slide="quote">
+    <section class="container fade-in-top" data-slide="quote" data-anime="1500">
       <blockquote class="quote-clientes">
         <p>
           "No mundo atual, a contínua expansao de nossa atividade cumpre um
@@ -119,21 +119,21 @@
 
     <!-- PORTFOLIO -->
     <section class="portfolio js-scroll">
-      <div class="container">
-        <h2 class="subtitulo">PORTFÓLIO</h2>
+      <h2 class="subtitulo">PORTFÓLIO</h2>
+      <div class="container" data-slide="portfolio">
         <ul class="portfolio-lista">
-          <li class="grid-8">
-            <img
-              class="rotate-in-2-bck-cw"
-              src="img/portfolio/retro.jpg"
-              alt="Bike Retro"
-            />
-          </li>
           <li class="grid-8">
             <img
               class="rotate-in-2-tr-ccw"
               src="img/portfolio/passeio.jpg"
               alt="Bike Passeio"
+            />
+          </li>
+          <li class="grid-8">
+            <img
+              class="rotate-in-2-bck-cw"
+              src="img/portfolio/retro.jpg"
+              alt="Bike Retro"
             />
           </li>
           <li class="grid-16">
@@ -144,10 +144,34 @@
             />
           </li>
         </ul>
-        <div class="call">
-          <p>Conheça mais o nosso Portfólio</p>
-          <a href="portfolio.html" class="btn">PORTFÓLIO</a>
-        </div>
+
+        <ul class="portfolio-lista">
+          <li class="grid-8">
+            <img
+              class="rotate-in-2-tr-ccw"
+              src="img/portfolio/passeio.jpg"
+              alt="Bike Passeio"
+            />
+          </li>
+          <li class="grid-8">
+            <img
+              class="rotate-in-2-bck-cw"
+              src="img/portfolio/retro.jpg"
+              alt="Bike Retro"
+            />
+          </li>
+          <li class="grid-16">
+            <img
+              class="fade-in"
+              src="img/portfolio/esporte.jpg"
+              alt="Bike Esporte"
+            />
+          </li>
+        </ul>
+      </div>
+      <div class="call">
+        <p>Conheça mais o nosso Portfólio</p>
+        <a href="portfolio.html" class="btn">PORTFÓLIO</a>
       </div>
     </section>
 
@@ -260,6 +284,7 @@
     </footer>
   </body>
 
+  <script defer src="main.js"></script>
   <script src="./js/simple-slide.js"></script>
   <script src="./js/script.js"></script>
 </html>
